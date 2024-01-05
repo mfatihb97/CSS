@@ -1,0 +1,109 @@
+/* Footer */
+
+.contact ul{
+    list-style: none;
+}
+.contact p{
+    font-size: 24px;
+    font-weight: 500;
+    }
+
+/* Headers */
+.headers{
+    text-align: center;
+}
+.headers ul {
+    list-style: none; /* Liste işaretlerini kaldırır */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.headers ul li {    
+    margin-right: 20px; /* Liste öğeleri arasına boşluk ekler */
+    
+}
+
+.headers ul li a {
+    padding: 8px 12px;
+    border: 1px solid rgb(35, 35, 119);
+    text-decoration: none; /* Bağlantıların alt çizgisini kaldırır */
+    color: rgb(35, 35, 119); 
+    font-weight:900;
+    font-size: 32px;
+
+}
+
+/* Bağlantılara fare üzerine gelindiğinde renk değişimi */
+.headers ul li a:hover {
+    color: yellow;
+    border-color: yellow;
+}
+
+/* Menu */
+.table{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;   
+}
+.images{
+   margin-right: 20px;
+}
+.text{
+    max-width: 70%;
+    flex: 1;
+    margin-right: 12%;
+    font-size: 20px;
+    border: 4px solid rgb(35, 35, 119) ;
+    border-radius: 10px;
+    padding: 10px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+
+
+.racket {
+    top: 45%;
+    left: 4%;    
+    display: flex;
+    position: absolute;       
+    animation: racketMove 0.8s infinite alternate; /* Raketin hareketi */
+    background-color: transparent;
+}
+
+.ball {
+    display: flex;
+    left: 7%;
+    bottom: 45%;
+    position: absolute;      
+    animation: ballMove 0.8s infinite alternate; /* Topun hareketi */
+    background-color: transparent;
+}
+
+@keyframes racketMove {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50px); /* Raketin hareketi */
+    }
+}
+
+@keyframes ballMove {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100px); /* Topun hareketi */
+    }
+}
+
+
+
+ 
